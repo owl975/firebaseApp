@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en" ng-app="">
+<head>
+  <meta charset="utf-8">
+
+  <title>Picture Book</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+
+</head>
+
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+
+      <h1>Once apon a time</h1>
+
+      <div>
+      	<label>title</label>
+      	<input class= "form-control" type="text" id="title" ng-model="title"></br>
+
+      	<label>Content</label>
+      	<input class= "form-control"type="text" id="content" ng-model="content">
+
+      </div>
+
+      </br>
+
+      <div>
+        <button class="btn btn-default">
+          Save<span class="glyphicon glyphicon-ok"></span>
+        </button>
+      </div>
+
+      <div>
+      	Title: {{title}} <br />
+      	Content: {{content}}
+      </div>
+
+
+     </div>
+  </div>
+</div>
+</body>
+</html>
