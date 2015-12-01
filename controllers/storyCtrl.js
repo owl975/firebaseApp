@@ -1,4 +1,4 @@
-angular.module('storyBoard', [])
+angular.module('storyBoard', ['ngAnimate'])
 
   .controller('storyCtrl', ['$scope', '$timeout', function ($scope, $timeout){
  	$scope.storyTitle = "";
