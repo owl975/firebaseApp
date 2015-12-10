@@ -5,7 +5,7 @@ angular.module('storyBoard', ['ngAnimate'])
     $scope.storyContent = "";
     $scope.stories = {};
 
-    $scope.myData = new Firebase("https://shining-inferno-9788.firebaseio.com/Stories");
+    $scope.myData = new Firebase("shining-inferno-9788.firebaseio.com/Stories");
 
     $scope.saveStory = function(){
       $scope.myData.push({storyTitle:$scope.storyTitle, storyContent:$scope.storyContent});
