@@ -17,15 +17,15 @@
 <body ng-controller="storyCtrl">
 <div class="container">
   <div class="row">
-    <div class="col-sm-6 col-sm-offset-3">
+    <div class="col-sm-8 col-sm-offset-2">
 
       <h1 class="title">Once apon a time</h1>
 
       <div>
-      	<label style="color:grey;">title</label>
+      	<label style="color:grey;">Image URL</label>
       	<input class= "form-control" type="text" id="storyTitle" ng-model="storyTitle"></br>
 
-      	<label style="color:grey;">Content</label>
+      	<label style="color:grey;">Add to the story</label>
       	<input class= "form-control"type="text" id="storyContent" ng-model="storyContent">
 
       </div>
@@ -40,11 +40,11 @@
       <br>
 
       <div class="item" ng-repeat="story in stories">
-      	<p>Title: {{story.storyTitle}}</p>
-        <p>Story: {{story.storyContent}}</p>
+        <img src="{{story.storyTitle}}" style="width:100%;">
+        <p style="font-size:20px;">{{story.storyContent}}</p>
       </div>
 
-
+<br>
      </div>
   </div>
 </div>
